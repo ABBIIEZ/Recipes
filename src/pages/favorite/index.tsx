@@ -42,10 +42,10 @@ const Favorite: React.FC = () => {
         <div>
             <div className="flex justify-between pt-16 mx-16 mb-2">
                 <Link to={"/"} className='text-xl font-sans  text-red-300 hover:text-red-200 '>‹ BACK</Link>
-                <h1 className="flex justify-end font-serif text-3xl ">Favorites Menu</h1>
+                <h1 className="flex justify-end font-serif text-xl lg:text-3xl ">Favorites Menu</h1>
             </div>
             <hr />
-            <div className='grid grid-cols-4 mt-[50px] gap-6 w-[90%] m-[auto]'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 mt-[50px] gap-6 w-[90%] m-[auto]'>
                 {likedItems.length > 0 ? (
                     likedItems.map((item) => (
                         <div key={item.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

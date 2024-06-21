@@ -31,10 +31,10 @@ const Search = () => {
                 </div>
             </form>
 
-            <div className="mt-[40px] italic ml-[35px] sm:text-xl lg:text-2xl">Select recipes by category</div>
+            <div className="mt-[40px] italic ml-[35px] text-xl lg:text-2xl">Select recipes by category</div>
 
 
-            <div className='grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[200px] sm:gap-[20px] mt-[30px] ml-9'>
+            <div className='grid  grid-cols-2 lg:grid-cols-4 lg:gap-[200px] gap-[20px] mt-[30px] ml-9'>
                 <div>
                     <form className="flex flex-col">
                         <label htmlFor="types" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">MEALS</label>
