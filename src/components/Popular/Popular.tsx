@@ -27,20 +27,32 @@ const Popular = () => {
 
     return (
         <div className="mt-8 mb-20">
-            <p className="text-4xl mb-10 font-sans">interesting food recipes</p>
+            <p className="text-4xl mb-10 font-sans ml-16">interesting food recipes</p>
             <Swiper
-                slidesPerView={4}
-                spaceBetween={50}
+                // slidesPerView={4}
+                // spaceBetween={50}
                 navigation={true}
                 modules={[Navigation]}
-                className="pl-16 pr-12"
+                className="sm:pl-16 lg:pl-14"
+                breakpoints={{
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                }}
 
             >
                 {popularRecipes?.results.map((recipe) => (
-                    <SwiperSlide key={recipe.id} >
+                    <SwiperSlide key={recipe.id} className="" >
                         <div>
-                            <img className="rounded-2xl w-[250px]" src={recipe.image} alt="" />
-                            <div className="flex justify-start w-[250px] sm:text-[10px] lg:text-[15px]">{recipe.title}</div>
+                            <img className="rounded-2xl sm:w-[160px] lg:w-[250px]" src={recipe.image} alt="" />
+                            <div className="flex justify-start w-[250px] sm:text-[8px] lg:text-[15px]">{recipe.title}</div>
                         </div>
                     </SwiperSlide>
                 ))}

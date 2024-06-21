@@ -80,7 +80,7 @@ const CategoryPages: React.FC = () => {
                         {params.id}
                     </div>
                 </div>
-                <div className='grid lg:grid-cols-4 md:grid-cols-2 mt-[50px] gap-6 '>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[50px] gap-6 '>
                     {menuList && menuList.results.map((item) => (
                         <div key={item.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">

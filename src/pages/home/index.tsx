@@ -30,7 +30,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <img src="/images/header.jpeg" alt="headimage" className="w-screen" />
+            <img src="/images/header.jpeg" alt="headimage" className="sm:w-screen 2xl:w-screen" />
             <div className="flex justify-between m-[40px]">
                 <div className="header-left">
                     <img src="/images/logo.png" alt="logo" className="w-[130px]" />
