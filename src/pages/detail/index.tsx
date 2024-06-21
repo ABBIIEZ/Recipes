@@ -49,7 +49,7 @@ const DetailPage = () => {
                             <ul>
 
                                 {detailMenu.extendedIngredients.map((ingredient) => (
-                                    <li key={ingredient.id}>{ingredient.name}{ingredient.image}</li>
+                                    <li key={ingredient.id}>{ingredient.name}</li>
                                 ))}
 
                             </ul>
