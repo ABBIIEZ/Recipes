@@ -38,10 +38,10 @@ const HomePage = () => {
                 <div className="header-right">
                     {email ? (
                         <>
-                            <span className="mr-1 font-medium">{email}</span>
-                            <Link to={"/"} onClick={handleLogout} className="font-medium rounded-lg text-sm hover:underline">| Logout</Link>
+                            <span className="mr-1 font-medium sm:text-sm text-[10px]">{email}</span>
+                            <Link to={"/"} onClick={handleLogout} className="font-medium rounded-lg  sm:text-sm text-[10px] hover:underline">| Logout</Link>
                             <div className="flex justify-center mt-3 border-solid border-2 border-grey hover:border-dotted w-[145px]">
-                                <Link to={"/favorite"}>❤️FavoritePage</Link>
+                                <Link to={"/favorite"} className="sm:text-sm text-[10px]">❤️FavoritePage</Link>
                             </div>
                         </>
                     ) : (
